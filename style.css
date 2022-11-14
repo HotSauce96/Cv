@@ -1,22 +1,29 @@
 body{
-margin:7rem;
-padding: 0;
+margin:2rem;
+padding: 5rem;
 font-family: 'Source Sans Pro', sans-serif;
-background: linear-gradient(220.55deg, #abd5fd 0%, #f0b0e9 100%);
+background-color: rgb(124, 122, 122);
+color: rgb(255, 255, 255);
+
 }
 
 .main_wrapper{
 margin-inline-start: auto;
-max-width: 45rem;
-font-size: 1.5rem;
+max-width: 75%;
+font-size: 1.8rem;
 font-weight: normal;
+}
+
+#particles-js{
+position: absolute;
+z-index: -1;
 }
 
 .aside{
 position: absolute;
-left: 50px;
-font-size: 1rem;
-font-weight: bold;
+left: 1rem;
+font-size: 1.2rem;
+font-weight: bolder;
 }
 
 
@@ -40,20 +47,72 @@ font-size: 1rem;
 font-weight:bolder;
 }
 
-img{
-display: none;
-position: absolute;
-top: 105px;
-left: 185px;
-width: 20rem;
-height: 30rem;
-border-radius: 25px;
+footer{
+display: block;
+position: relative;
+bottom: -5rem;
+text-align: start;
+font-size: 1.7rem;
+font-weight: bolder;
 }
 
-footer{
-display: none;
-position: relative;
-text-align: center;
-font-size: 1.5rem;
-font-weight: bolder;
+
+@media screen and (max-width: 750px) {
+	h1{
+	font-size: 2rem;
+	font-weight: 200;
+	display: block;
+	position: absolute;
+	left: 1rem;
+	}
+
+.main_wrapper{
+margin-inline-start: auto;
+max-width: 25%;
+font-size: 1.1rem;
+font-weight: normal;
+}
+
+p{
+ width: 40%;
+font-size: 1.4rem;
+font-weight: 100;
+left: 1rem;
+text-align:center;
+}
+
+body{
+display: flex;
+}
+}
+
+
+@media screen and (max-width: 450px) {
+	h1{
+	font-size: 1.1rem;
+	font-weight: 100;
+	display: block;
+	position: absolute;
+	left:0;
+	}
+
+.main_wrapper{
+margin-inline-start: auto;
+max-width: 5%;
+font-size: 0.9rem;
+font-weight: normal;
+}
+
+p{
+font-size: 1.4rem;
+font-weight: 100;
+display: block;
+position: absolute;
+right: 1rem;
+
+}
+
+body{
+display: block;
+}
 }

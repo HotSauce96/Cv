@@ -11,8 +11,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
-<body id="body">
-	<div class="main_content">
+<body>
+
+	<div class="container" id="particles-js">
+
 		<div class="main_wrapper">
 			<h1 id="h1" data-aos="fade-up" data-aos-duration="1500" >Hi, I'm Juan Pablo, Front end Developer Junior</h1>
 			<p>Fresh, kind, and proactive man wants to continue his adventure on his constant growing, adding to the mix all learned knowledge, applying gathered concepts in customer service as empathy, assertive read, and assertive communication.</p>
@@ -54,6 +56,7 @@
 			<li data-aos="fade-up" data-aos-duration="3000">Android Studio (XML)</li>
 			<li data-aos="fade-up" data-aos-duration="3000">Php</li>
 			<li data-aos="fade-up" data-aos-duration="3000">SQL</li>
+			<li data-aos="fade-up" data-aos-duration="3000">Agile Methodologies</li>
 		</div>
 			<br>
 		<footer id="footer">
@@ -65,5 +68,120 @@
   		AOS.init();
 	</script>
 	<script src="App.js"></script>
+	<script src="/particles.min.js"></script>
+	<script>
+			particlesJS(
+{
+  "particles": {
+    "number": {
+      "value": 104,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 275.7242757242757,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+	}
+			)
+	</script>
 </body>
 </html>

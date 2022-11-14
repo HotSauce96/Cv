@@ -48,11 +48,10 @@ font-weight:bolder;
 }
 
 footer{
-display: block;
+font-size: 1.7rem;
 position: relative;
 bottom: -5rem;
 text-align: start;
-font-size: 1.7rem;
 font-weight: bolder;
 }
 

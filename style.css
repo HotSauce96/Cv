@@ -1,11 +1,14 @@
 body{
-margin:2rem;
-padding: 5rem;
+margin:7rem;
+display: flexbox;
+padding: 0;
 font-family: 'Source Sans Pro', sans-serif;
-background-color: rgb(124, 122, 122);
-color: rgb(255, 255, 255);
-
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+height: 100vh;
 }
+
 
 .main_wrapper{
 margin-inline-start: auto;
@@ -95,23 +98,35 @@ display: flex;
 	left:0;
 	}
 
-.main_wrapper{
-margin-inline-start: auto;
-max-width: 5%;
-font-size: 0.9rem;
-font-weight: normal;
+	.main_wrapper{
+	margin-inline-start: auto;
+	max-width: 5%;
+	font-size: 0.9rem;
+	font-weight: normal;
+	}
+
+	p{
+	font-size: 1.4rem;
+	font-weight: 100;
+	display: block;
+	position: absolute;
+	right: 1rem;
+
+	}
+
+	body{
+	display: block;
+	}
 }
 
-p{
-font-size: 1.4rem;
-font-weight: 100;
-display: block;
-position: absolute;
-right: 1rem;
-
-}
-
-body{
-display: block;
-}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
